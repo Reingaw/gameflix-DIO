@@ -4,9 +4,32 @@
         flex-direction: column;
     }
 
+    header a {
+        font-size: 14px;
+    }
+
+    .main-game .title {
+        font-size: 20px;
+    }
+
+    .description {
+        margin-top: 5%;
+        font-size: 13px;
+    }
+
     .button {
         margin-top: 5px;
         width: 300px;
+    }
+
+    #modal {
+        align-items: flex-start;
+    }
+
+    #modal-content {
+        margin-top: 50px;
+        width: 90%;
+        height: 25%;
     }
 }
 
@@ -14,5 +37,7 @@
     .description {
         width: 50%;
     }
+
+    
     
 }

@@ -1,7 +1,7 @@
 window.onload = ()=> {
     const body = document.querySelector('body');
 
-    const buttons = document.querySelectorAll('button');
+    const buttons = document.querySelectorAll('.button');
 
     const modal = document.getElementById('modal');
     const closeModal = document.getElementById('close-modal');
@@ -48,7 +48,11 @@ window.onload = ()=> {
 
     buttons.forEach(button=> {
         button.addEventListener('click', (e)=>{
-            if(e.target.id !== 'main-more-info') {
+            e
+
+            const { id } = e.target;
+
+            if( id !== 'main-more-info') {
                 watchVideo(e.target.id);
             }else {
                 openInfo();
